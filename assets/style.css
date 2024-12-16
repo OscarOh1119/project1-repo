@@ -55,3 +55,31 @@ footer {
     padding: 10px 0;
     margin-top: 20px;
 }
+
+/* Form styling  */
+
+/* Styling for form labels */
+.col-form-label {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+/* Styling for button */
+.mb-2 {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10px;
+}
+
+/* Styling for rating section */
+ #rating{
+    color: #4F5153;
+}
+
+/* Styling for review section */
+#review {
+    resize: none;
+}
+
