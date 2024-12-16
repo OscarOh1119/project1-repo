@@ -67,11 +67,23 @@ main {
     object-fit:cover;
 
 }
+/* 
+.imdb-container {
+    width:500px;
+    object-fit:cover;
+} */
 
-.container-outer {
+/* #container-outer {
     border: 1px solid black;
     width: 100%;
     float:left;
+} */
+
+.josh-container {
+    margin:10px;
+    float:left;
+    width:45%;
+    border: 1px solid black;
 }
 
 
