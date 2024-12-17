@@ -68,18 +68,58 @@ main {
 
 }
 
-.container-outer {
+#imdb-container {
+    
+    height:400px;
+    display:absolute;
+    margin:40px;
+    float:left;
+    width:45%;
     border: 1px solid black;
+}
+
+.container-outer {
+    
     width: 100%;
     float:left;
 }
 
+.container-inner {
+    display:absolute;
+    margin:40px;
+    float:left;
+    width:45%;
+    border: 1px solid black;  
+}
+
+.container-overlay {
+    position: absolute;
+    top:70%;
+    color:#fff;
+    padding: 20px;
+}
 
 .footer-list {
     list-style: none;
     display: inline-block;
     padding: 0;
 }
+
+.light-pic-font {
+    font-family: "consolas", "sans-serif";
+    color:black;
+    font-weight:bold;
+    font-size:30px;
+}
+
+.dark-pic-font {
+    font-family: "consolas", "sans-serif";
+    color:#fff;
+    font-weight:bold;
+    font-size:30px;
+}
+
+
 
 
 /* Form styling  */
