@@ -1,11 +1,41 @@
-// Starter code for (project1-repo)
-// Function to greet the user
-function greetUser(name) {
-    return `Hello, ${name}! Welcome to project1-repo.`;
-}
-// Example usage
-const userName = 'User';
-console.log(greetUser(userName));
+// document.addEventListener('DOMContentLoaded', function() {
+//     const exampleModal = document.getElementById('exampleModal');
+    
+//     if (exampleModal) {
+//         exampleModal.addEventListener('shown.bs.modal', function() {
+//             const saveChangesButton = document.getElementById('save-changes'); 
+//             if (saveChangesButton) {
+//                 saveChangesButton.addEventListener('click', function() {
+//                     const firstName = document.getElementById('firstname').value;
+//                     const lastName = document.getElementById('lastname').value;
+//                     const tvshow = document.getElementById('tvshow').value;
+//                     const rating = document.getElementById('rating').value;
+//                     const review = document.getElementById('review').value;
+    
+//                     // Check if any field is empty
+//                     if (!firstName || !lastName || !tvshow || !rating || !review) {
+//                         alert('Please fill in all fields.'); // Display an error message
+//                         return; // Exit the function if validation fails
+//                     }
+    
+//                     // If all fields are filled, save to localStorage
+//                     localStorage.setItem('firstName', firstName);
+//                     localStorage.setItem('lastName', lastName);
+//                     localStorage.setItem('tvShow', tvshow);
+//                     localStorage.setItem('rating', rating);
+//                     localStorage.setItem('review', review);
+    
+//                     console.log('First Name:', firstName);
+//                     console.log('Last Name:', lastName);
+//                     console.log('TV Show:', tvshow);
+//                     console.log('Rating:', rating);
+//                     console.log('Review:', review);
+//                 });
+//             }
+//         });
+//     }
+
+
 
 // Form logic
 
@@ -41,7 +71,9 @@ elements.addEventListener("submit", function(submit) {
 
         console.log(newShow);
         storeShow(newShow); // Call the storeShow function to save the new entry
-        prompt("Form submitted successfully");
+        
+        const modal = new bootstrap.Modal(document.getElementById('exampleModal'));
+        modal.show();
     }
 });
 
@@ -72,59 +104,3 @@ function storeShow(newShow) {
 // Step 10: Allow the user to remove old entries
 
 // Step 11: Show a modal to the user confirming removal
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-document.addEventListener('DOMContentLoaded', function() {
-    const exampleModal = document.getElementById('exampleModal');
-    
-    if (exampleModal) {
-        exampleModal.addEventListener('shown.bs.modal', function() {
-            const saveChangesButton = document.getElementById('save-changes');
-            if (saveChangesButton) {
-                saveChangesButton.addEventListener('click', function() {
-                    const firstName = document.getElementById('first-name').value;
-                    const lastName = document.getElementById('last-name').value;
-                    const tvShow = document.getElementById('TV-show').value;
-                    const rating = document.getElementById('rating').value;
-                    const review = document.getElementById('review').value;
-
-                    console.log('First Name:', firstName);
-                    console.log('Last Name:', lastName);
-                    console.log('TV Show:', tvShow);
-                    console.log('Rating:', rating);
-                    console.log('Review:', review);
-                });
-            } else {
-                console.error('Save changes button not found');
-            }
-        });
-    } else {
-        console.error('Example modal not found');
-    }
-});
