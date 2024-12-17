@@ -1,38 +1,3 @@
-// Starter code for (project1-repo)
-// Function to greet the user
-function greetUser(name) {
-    return `Hello, ${name}! Welcome to project1-repo.`;
-}
-// Example usage
-const userName = 'User';
-console.log(greetUser(userName));
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 document.addEventListener('DOMContentLoaded', function() {
     const exampleModal = document.getElementById('exampleModal');
@@ -47,6 +12,12 @@ document.addEventListener('DOMContentLoaded', function() {
                     const tvShow = document.getElementById('TV-show').value;
                     const rating = document.getElementById('rating').value;
                     const review = document.getElementById('review').value;
+
+                    localStorage.setItem('firstName', firstName);
+                    localStorage.setItem('lastName', lastName);
+                    localStorage.setItem('tvShow', tvShow);
+                    localStorage.setItem('rating', rating);
+                    localStorage.setItem('review', review);
 
                     console.log('First Name:', firstName);
                     console.log('Last Name:', lastName);
