@@ -29,9 +29,9 @@
                           About Us
                         </a>
                         <ul class="dropdown-menu">
-                          <li><a class="dropdown-item" href="./aboutjosh.html">About Joshua</a></li>
-                          <li><a class="dropdown-item" href="./aboutjonathan.html">About Jonathan</a></li>
-                          <li><a class="dropdown-item" href="./aboutoscar.html">About Oscar</a></li>
+                          <li><a class="dropdown-item" href="#">About Joshua</a></li>
+                          <li><a class="dropdown-item" href="#">About Jonathan</a></li>
+                          <li><a class="dropdown-item" href="#">About Oscar</a></li>
                         </ul>
                       </li>
                 </ul>
@@ -41,15 +41,76 @@
     </header>
     <main>
         
-      <section id="staff-review" class="container-outer">
-        <h2>Staff Reviews</h2>
-        <div id="josh-container" class="carousel slide container-inner">
-          <div class="carousel-indicators">
-            <button type="button" data-bs-target="#josh-container" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#josh-container" data-bs-slide-to="1" aria-label="Slide 2"></button>
-            <button type="button" data-bs-target="#josh-container" data-bs-slide-to="2" aria-label="Slide 3"></button>
-            <button type="button" data-bs-target="#josh-container" data-bs-slide-to="3" aria-label="Slide 4"></button>
-            <button type="button" data-bs-target="#josh-container" data-bs-slide-to="4" aria-label="Slide 5"></button>
+        <section id="staff-review" class="container-outer">
+          <h2>Staff Reviews</h2>
+          <div id="josh-container" class="carousel slide container-inner">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#josh-container" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#josh-container" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#josh-container" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              <button type="button" data-bs-target="#josh-container" data-bs-slide-to="3" aria-label="Slide 4"></button>
+              <button type="button" data-bs-target="#josh-container" data-bs-slide-to="4" aria-label="Slide 5"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active c-item">
+                <img src="https://static.hbo.com/content/dam/hbodata/series/the-wire/ka/the-wire-ka-1920.jpg" class="d-block w-100 c-img" alt="img not found">
+                <div class="carousel-caption top-0 mt-4 d-none d-md-block">
+                  <h2 class="position-absolute top-0 start-0 translate-middle dark-pic-font">Joshua's picks</h2>
+                </div>
+                <div class="carousel-caption d-none d-md-block">
+                  <h3 class="text-capitalize dark-pic-font">The Wire</h3>
+                  <button id="the-wire-button" class="btn btn-primary">Check it out!</button>
+                </div>
+              </div>
+              <div class="carousel-item c-item">
+                <img src="https://deadline.com/wp-content/uploads/2021/12/Snowfall-Season-5.jpg?w=1000" class="d-block w-100 c-img" alt="img not found">
+                <div class="carousel-caption top-0 mt-4 d-none d-md-block">
+                  <h2 class="position-absolute top-0 start-0 translate-middle dark-pic-font">Joshua's Picks</h2>
+                </div>
+                <div class="carousel-caption d-none d-md-block">
+                  <h3 class="text-capitalize dark-pic-font">Snowfall</h3>
+                  <button id="snowfall-button" class="btn btn-primary">Check it out!</button>
+                </div>
+              </div>
+              <div class="carousel-item c-item">
+                <img src="https://miro.medium.com/v2/resize:fit:1400/1*cdxI4RMdiCGTf5zPaTA6nQ.jpeg" class="d-block w-100 c-img" alt="img not found">
+                <div class="carousel-caption top-0 mt-4 d-none d-md-block">
+                  <h2 class="position-absolute top-0 start-0 translate-middle dark-pic-font">Joshua's picks</h2>
+                </div>
+                <div class="carousel-caption d-none d-md-block">
+                  <h3 class="text-capitalize dark-pic-font">The Sopranos</h3>
+                  <button id="the-sopranos-button" class="btn btn-primary">Check it out!</button>
+                </div>
+              </div>
+              <div class="carousel-item c-item">
+                <img src="https://media1.popsugar-assets.com/files/thumbor/mvM2mbLQC6VoPCYce3GH3EppA-8=/fit-in/792x527/top/filters:format_auto():upscale()/2015/05/20/867/n/1922283/79c9b480_edit_img_cover_file_16548855_1432138964_V_featured.jpg" class="d-block w-100 c-img" alt="img not found">
+                <div class="carousel-caption top-0 mt-4 d-none d-md-block">
+                  <h2 class="position-absolute top-0 start-0 translate-middle dark-pic-font">Joshua's picks</h2>
+                </div>
+                <div class="carousel-caption d-none d-md-block">
+                  <h3 class="text-capitalize dark-pic-font">Vikings</h3>
+                  <button id="vikings-button" class="btn btn-primary">Check it out!</button>
+                </div>
+              </div>
+              <div class="carousel-item c-item">
+                <img src="https://i.pinimg.com/736x/e0/9e/d1/e09ed16d64dc7ef3206ce1ebc03a1d48.jpg" class="d-block w-100 c-img" alt="img not found">
+                <div class="carousel-caption top-0 mt-4 d-none d-md-block">
+                  <h2 class="position-absolute top-0 start-0 translate-middle light-pic-font">Joshua's picks</h2>
+                </div>
+                <div class="carousel-caption d-none d-md-block">
+                  <h3 class="text-capitalize light-pic-font">Lioness</h3>
+                  <button id="lioness-button" class="btn btn-primary">Check it out!</button>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#josh-container" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#josh-container" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
           </div>
           <div class="carousel-inner">
             <div class="carousel-item active c-item">
@@ -113,159 +174,182 @@
           </button>
         </div>
 
-        <div id="jonathan-container" class="carousel slide container-inner">
-          <div class="carousel-indicators">
-            <button type="button" data-bs-target="#jonathan-container" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#jonathan-container" data-bs-slide-to="1" aria-label="Slide 2"></button>
-            <button type="button" data-bs-target="#jonathan-container" data-bs-slide-to="2" aria-label="Slide 3"></button>
-            <button type="button" data-bs-target="#jonathan-container" data-bs-slide-to="3" aria-label="Slide 4"></button>
-            <button type="button" data-bs-target="#jonathan-container" data-bs-slide-to="4" aria-label="Slide 5"></button>
+          <div id="jonathan-container" class="carousel slide container-inner">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#jonathan-container" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#jonathan-container" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#jonathan-container" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              <button type="button" data-bs-target="#jonathan-container" data-bs-slide-to="3" aria-label="Slide 4"></button>
+              <button type="button" data-bs-target="#jonathan-container" data-bs-slide-to="4" aria-label="Slide 5"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active c-item">
+                <img src="https://images.bauerhosting.com/empire/2023/04/silo.jpg?ar=16%3A9&fit=crop&crop=top&auto=format&w=undefined&q=80" class="d-block w-100 c-img" alt="img not found">
+                <div class="carousel-caption top-0 mt-4 d-none d-md-block">
+                  <h2 class="position-absolute top-0 ms-3 translate-middle dark-pic-font">Jonathan's picks</h2>
+                </div>
+                <div class="carousel-caption d-none d-md-block">
+                  <h3 class="text-capitalize dark-pic-font">Silo</h3>
+                  <button id="silo-button" class="btn btn-primary">Check it out!</button>
+                </div>
+              </div>
+              <div class="carousel-item c-item">
+                <img src="https://static.hbo.com/game-of-thrones-1-1920x1080.jpg" class="d-block w-100 c-img" alt="img not found">
+                <div class="carousel-caption top-0 mt-4 d-none d-md-block">
+                  <h2 class="position-absolute top-0 ms-3 translate-middle dark-pic-font">Jonathan's picks</h2>
+                </div>
+                <div class="carousel-caption d-none d-md-block">
+                  <h3 class="text-capitalize dark-pic-font">Game of Thrones</h3>
+                  <button id="game-of-thrones-button" class="btn btn-primary">Check it out!</button>
+                </div>
+              </div>
+              <div class="carousel-item c-item">
+                <img src="https://images.cdn.prd.api.discomax.com/2023/02/09/c5fe4cd5-1e56-39b7-a655-9c564e0f5b4b.jpeg?f=jpg&q=75&w=1280" class="d-block w-100 c-img" alt="img not found">
+                <div class="carousel-caption top-0 mt-4 d-none d-md-block">
+                  <h2 class="position-absolute top-0 ms-3 translate-middle dark-pic-font">Jonathan's picks</h2>
+                </div>
+                <div class="carousel-caption d-none d-md-block">
+                  <h3 class="text-capitalize dark-pic-font">Entourage</h3>
+                  <button id="entourage-button" class="btn btn-primary">Check it out!</button>
+                </div>
+              </div>
+              <div class="carousel-item c-item">
+                <img src="https://compote.slate.com/images/b0e9d3a0-5d8a-4dc8-9923-27776eb51d03.jpeg?crop=1560%2C1040%2Cx0%2Cy0" class="d-block w-100 c-img" alt="img not found">
+                <div class="carousel-caption top-0 mt-4 d-none d-md-block">
+                  <h2 class="position-absolute top-0 ms-3 translate-middle dark-pic-font">Jonathan's picks</h2>
+                </div>
+                <div class="carousel-caption d-none d-md-block">
+                  <h3 class="text-capitalize dark-pic-font">The Penguin</h3>
+                  <button id="the-penguin-button" class="btn btn-primary">Check it out!</button>
+                </div>
+              </div>
+              <div class="carousel-item c-item">
+                <img src="https://occ-0-8407-1722.1.nflxso.net/dnm/api/v6/E8vDc_W8CLv7-yMQu8KMEC7Rrr8/AAAABfxEL5qVk32OG9jq8do2OxROZw7Vx0g7F4PAXTpqtT_FAHr4HL23sZ59C0jTFaUMeNY-8D_iHZux6tz6QROJXG1R-gyxobkekTfZ.jpg?r=259" class="d-block w-100 c-img" alt="img not found">
+                <div class="carousel-caption top-0 mt-4 d-none d-md-block">
+                  <h2 class="position-absolute top-0 ms-3 translate-middle dark-pic-font">Jonathan's picks</h2>
+                </div>
+                <div class="carousel-caption d-none d-md-block">
+                  <h3 class="text-capitalize dark-pic-font">Chef's Table</h3>
+                  <button id="chef-table-button" class="btn btn-primary">Check it out!</button>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#jonathan-container" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#jonathan-container" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
           </div>
-          <div class="carousel-inner">
-            <div class="carousel-item active c-item">
-              <img src="https://images.bauerhosting.com/empire/2023/04/silo.jpg?ar=16%3A9&fit=crop&crop=top&auto=format&w=undefined&q=80" class="d-block w-100 c-img" alt="img not found">
-              <div class="carousel-caption top-0 mt-4 d-none d-md-block">
-                <h2 class="position-absolute top-0 ms-3 translate-middle dark-pic-font">Jonathan's picks</h2>
+
+          <div id="oscar-container" class="carousel slide container-inner">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#oscar-container" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#oscar-container" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#oscar-container" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              <button type="button" data-bs-target="#oscar-container" data-bs-slide-to="3" aria-label="Slide 4"></button>
+              <button type="button" data-bs-target="#oscar-container" data-bs-slide-to="4" aria-label="Slide 5"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active c-item">
+                <img src="https://static1.srcdn.com/wordpress/wp-content/uploads/2023/03/the_poster_for_ted_lasso.jpg" class="d-block w-100 c-img" alt="img not found">
+                <div class="carousel-caption top-0 mt-4 d-none d-md-block">
+                  <h2 class="position-absolute top-0 start-0 translate-middle dark-pic-font">Oscar's picks</h2>
+                </div>
+                <div class="carousel-caption d-none d-md-block">
+                  <h3 class="text-capitalize dark-pic-font">Ted Lasso</h3>
+                  <button id="ted-lasso-button" class="btn btn-primary">Check it out!</button>
+                </div>
               </div>
-              <div class="carousel-caption d-none d-md-block">
-                <h3 class="text-capitalize dark-pic-font">Silo</h3>
-                <button id="silo-button" class="btn btn-primary">Check it out!</button>
+              <div class="carousel-item c-item">
+                <img src="https://wallpapers.com/images/hd/breaking-bad-walter-and-jesse-80bjfb94bgadfr0p.jpg" class="d-block w-100 c-img" alt="img not found">
+                <div class="carousel-caption top-0 mt-4 d-none d-md-block">
+                  <h2 class="position-absolute top-0 start-0 translate-middle light-pic-font">Oscar's picks</h2>
+                </div>
+                <div class="carousel-caption d-none d-md-block">
+                  <h3 class="text-capitalize light-pic-font">Breaking Bad</h3>
+                  <button id="breaking-bad-button" class="btn btn-primary">Check it out!</button>
+                </div>
+              </div>
+              <div class="carousel-item c-item">
+                <img src="https://occ-0-8407-1722.1.nflxso.net/dnm/api/v6/6AYY37jfdO6hpXcMjf9Yu5cnmO0/AAAABXHrRD23-SCJ7YC30D2psLQqgEVLaxyPbl9ojlOrpPTJQNkfkvkStCvRJfMDEuRNVes4sqylWQ-tmGKVlWBWxOyI1SarTOgp8sYQ.jpg?r=a9c" class="d-block w-100 c-img" alt="img not found">
+                <div class="carousel-caption top-0 mt-4 d-none d-md-block">
+                  <h2 class="position-absolute top-0 start-0 translate-middle dark-pic-font">Oscar's picks</h2>
+                </div>
+                <div class="carousel-caption d-none d-md-block">
+                  <h3 class="text-capitalize dark-pic-font">Better Call Saul</h3>
+                  <button id="better-call-saul-button" class="btn btn-primary">Check it out!</button>
+                </div>
+              </div>
+              <div class="carousel-item c-item">
+                <img src="https://occ-0-8407-1723.1.nflxso.net/dnm/api/v6/6AYY37jfdO6hpXcMjf9Yu5cnmO0/AAAABXoMuByYctrM1_ze-IPO4lijunahIUD0gfciKx3IPExP9XyLDMAPx-Ms1hkCiFGaIPIFlQQFToX679KSr0n__mbaAz9d54pYi3mZ.jpg?r=cbd" class="d-block w-100 c-img" alt="img not found">
+                <div class="carousel-caption top-0 mt-4 d-none d-md-block">
+                  <h2 class="position-absolute top-0 start-0 translate-middle light-pic-font">Oscar's picks</h2>
+                </div>
+                <div class="carousel-caption d-none d-md-block">
+                  <h3 class="text-capitalize dark-pic-font">Crash Landing on You</h3>
+                  <button id="crash-landing-on-you-button" class="btn btn-primary">Check it out!</button>
+                </div>
+              </div>
+              <div class="carousel-item c-item">
+                <img src="https://static01.nyt.com/images/2022/02/18/arts/17severance/17severance-videoSixteenByNineJumbo1600.jpg" class="d-block w-100 c-img" alt="img not found">
+                <div class="carousel-caption top-0 mt-4 d-none d-md-block">
+                  <h2 class="position-absolute top-0 start-0 translate-middle light-pic-font">Oscar's picks</h2>
+                </div>
+                <div class="carousel-caption d-none d-md-block">
+                  <h3 class="text-capitalize light-pic-font">Severance</h3>
+                  <button id="severance-button" class="btn btn-primary">Check it out!</button>
+                </div>
               </div>
             </div>
-            <div class="carousel-item c-item">
-              <img src="https://static.hbo.com/game-of-thrones-1-1920x1080.jpg" class="d-block w-100 c-img" alt="img not found">
-              <div class="carousel-caption top-0 mt-4 d-none d-md-block">
-                <h2 class="position-absolute top-0 ms-3 translate-middle dark-pic-font">Jonathan's picks</h2>
-              </div>
-              <div class="carousel-caption d-none d-md-block">
-                <h3 class="text-capitalize dark-pic-font">Game of Thrones</h3>
-                <button id="game-of-thrones-button" class="btn btn-primary">Check it out!</button>
-              </div>
-            </div>
-            <div class="carousel-item c-item">
-              <img src="https://images.cdn.prd.api.discomax.com/2023/02/09/c5fe4cd5-1e56-39b7-a655-9c564e0f5b4b.jpeg?f=jpg&q=75&w=1280" class="d-block w-100 c-img" alt="img not found">
-              <div class="carousel-caption top-0 mt-4 d-none d-md-block">
-                <h2 class="position-absolute top-0 ms-3 translate-middle dark-pic-font">Jonathan's picks</h2>
-              </div>
-              <div class="carousel-caption d-none d-md-block">
-                <h3 class="text-capitalize dark-pic-font">Entourage</h3>
-                <button id="entourage-button" class="btn btn-primary">Check it out!</button>
-              </div>
-            </div>
-            <div class="carousel-item c-item">
-              <img src="https://compote.slate.com/images/b0e9d3a0-5d8a-4dc8-9923-27776eb51d03.jpeg?crop=1560%2C1040%2Cx0%2Cy0" class="d-block w-100 c-img" alt="img not found">
-              <div class="carousel-caption top-0 mt-4 d-none d-md-block">
-                <h2 class="position-absolute top-0 ms-3 translate-middle dark-pic-font">Jonathan's picks</h2>
-              </div>
-              <div class="carousel-caption d-none d-md-block">
-                <h3 class="text-capitalize dark-pic-font">The Penguin</h3>
-                <button id="the-penguin-button" class="btn btn-primary">Check it out!</button>
-              </div>
-            </div>
-            <div class="carousel-item c-item">
-              <img src="https://occ-0-8407-1722.1.nflxso.net/dnm/api/v6/E8vDc_W8CLv7-yMQu8KMEC7Rrr8/AAAABfxEL5qVk32OG9jq8do2OxROZw7Vx0g7F4PAXTpqtT_FAHr4HL23sZ59C0jTFaUMeNY-8D_iHZux6tz6QROJXG1R-gyxobkekTfZ.jpg?r=259" class="d-block w-100 c-img" alt="img not found">
-              <div class="carousel-caption top-0 mt-4 d-none d-md-block">
-                <h2 class="position-absolute top-0 ms-3 translate-middle dark-pic-font">Jonathan's picks</h2>
-              </div>
-              <div class="carousel-caption d-none d-md-block">
-                <h3 class="text-capitalize dark-pic-font">Chef's Table</h3>
-                <button id="chef-table-button" class="btn btn-primary">Check it out!</button>
+            <button class="carousel-control-prev" type="button" data-bs-target="#oscar-container" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>           
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#oscar-container" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+          <div id="imdb-container" class="carousel slide">
+            <div class="carousel-inner">
+              <div class="carousel-item active c-item">
+                <img id="imdb-image" src="" class="d-block w-100 c-img" alt="image not found">
+                <div class="carousel-caption top-0 mt-2 d-none d-md-block">
+                  <h2 class="position-absolute start-0 translate-middle">IMDB Top 15</h2>
+                </div>
+                <div class="carousel-caption d-none d-md-block">
+                  <button id="imdb-button" class="btn btn-primary">Check it out!</button>
+                </div>
               </div>
             </div>
           </div>
-          <button class="carousel-control-prev" type="button" data-bs-target="#jonathan-container" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-          </button>
-          <button class="carousel-control-next" type="button" data-bs-target="#jonathan-container" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-          </button>
-        </div>
-11:08
-        <div id="oscar-container" class="carousel slide container-inner">
-          <div class="carousel-indicators">
-            <button type="button" data-bs-target="#oscar-container" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#oscar-container" data-bs-slide-to="1" aria-label="Slide 2"></button>
-            <button type="button" data-bs-target="#oscar-container" data-bs-slide-to="2" aria-label="Slide 3"></button>
-            <button type="button" data-bs-target="#oscar-container" data-bs-slide-to="3" aria-label="Slide 4"></button>
-            <button type="button" data-bs-target="#oscar-container" data-bs-slide-to="4" aria-label="Slide 5"></button>
-          </div>
-          <div class="carousel-inner">
-            <div class="carousel-item active c-item">
-              <img src="https://static1.srcdn.com/wordpress/wp-content/uploads/2023/03/the_poster_for_ted_lasso.jpg" class="d-block w-100 c-img" alt="img not found">
-              <div class="carousel-caption top-0 mt-4 d-none d-md-block">
-                <h2 class="position-absolute top-0 start-0 translate-middle dark-pic-font">Oscar's picks</h2>
-              </div>
-              <div class="carousel-caption d-none d-md-block">
-                <h3 class="text-capitalize dark-pic-font">Ted Lasso</h3>
-                <button id="ted-lasso-button" class="btn btn-primary">Check it out!</button>
-              </div>
-            </div>
-            <div class="carousel-item c-item">
-              <img src="https://wallpapers.com/images/hd/breaking-bad-walter-and-jesse-80bjfb94bgadfr0p.jpg" class="d-block w-100 c-img" alt="img not found">
-              <div class="carousel-caption top-0 mt-4 d-none d-md-block">
-                <h2 class="position-absolute top-0 start-0 translate-middle light-pic-font">Oscar's picks</h2>
-              </div>
-              <div class="carousel-caption d-none d-md-block">
-                <h3 class="text-capitalize light-pic-font">Breaking Bad</h3>
-                <button id="breaking-bad-button" class="btn btn-primary">Check it out!</button>
-              </div>
-            </div>
-            <div class="carousel-item c-item">
-              <img src="https://occ-0-8407-1722.1.nflxso.net/dnm/api/v6/6AYY37jfdO6hpXcMjf9Yu5cnmO0/AAAABXHrRD23-SCJ7YC30D2psLQqgEVLaxyPbl9ojlOrpPTJQNkfkvkStCvRJfMDEuRNVes4sqylWQ-tmGKVlWBWxOyI1SarTOgp8sYQ.jpg?r=a9c" class="d-block w-100 c-img" alt="img not found">
-              <div class="carousel-caption top-0 mt-4 d-none d-md-block">
-                <h2 class="position-absolute top-0 start-0 translate-middle dark-pic-font">Oscar's picks</h2>
-              </div>
-              <div class="carousel-caption d-none d-md-block">
-                <h3 class="text-capitalize dark-pic-font">Better Call Saul</h3>
-                <button id="better-call-saul-button" class="btn btn-primary">Check it out!</button>
-              </div>
-            </div>
-            <div class="carousel-item c-item">
-              <img src="https://occ-0-8407-1723.1.nflxso.net/dnm/api/v6/6AYY37jfdO6hpXcMjf9Yu5cnmO0/AAAABXoMuByYctrM1_ze-IPO4lijunahIUD0gfciKx3IPExP9XyLDMAPx-Ms1hkCiFGaIPIFlQQFToX679KSr0n__mbaAz9d54pYi3mZ.jpg?r=cbd" class="d-block w-100 c-img" alt="img not found">
-              <div class="carousel-caption top-0 mt-4 d-none d-md-block">
-                <h2 class="position-absolute top-0 start-0 translate-middle light-pic-font">Oscar's picks</h2>
-              </div>
-              <div class="carousel-caption d-none d-md-block">
-                <h3 class="text-capitalize dark-pic-font">Crash Landing on You</h3>
-                <button id="crash-landing-on-you-button" class="btn btn-primary">Check it out!</button>
-              </div>
-            </div>
-            <div class="carousel-item c-item">
-              <img src="https://static01.nyt.com/images/2022/02/18/arts/17severance/17severance-videoSixteenByNineJumbo1600.jpg" class="d-block w-100 c-img" alt="img not found">
-              <div class="carousel-caption top-0 mt-4 d-none d-md-block">
-                <h2 class="position-absolute top-0 start-0 translate-middle light-pic-font">Oscar's picks</h2>
-              </div>
-              <div class="carousel-caption d-none d-md-block">
-                <h3 class="text-capitalize light-pic-font">Severance</h3>
-                <button id="severance-button" class="btn btn-primary">Check it out!</button>
-              </div>
-            </div>
-          </div>
-          <button class="carousel-control-prev" type="button" data-bs-target="#oscar-container" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>           
-          </button>
-          <button class="carousel-control-next" type="button" data-bs-target="#oscar-container" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-          </button>
-        </div>
-        <div id="imdb-container" class="carousel slide">
-          <div class="carousel-inner">
-            <div class="carousel-item active c-item">
-              <img id="imdb-image" src="" class="d-block w-100 c-img" alt="image not found">
-              <div class="carousel-caption top-0 mt-2 d-none d-md-block">
-                <h2 class="position-absolute start-0 translate-middle">IMDB Top 15</h2>
-              </div>
-              <div class="carousel-caption d-none d-md-block">
-                <button id="imdb-button" class="btn btn-primary">Check it out!</button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+        </section>
+        <section id="add-movie">
+            <h2>Add a movie</h2>
+            <form id="form">
+                <div class="form-group row">
+                    <label for="first-name" class="col-sm-1 col-form-label">First Name</label>
+                    <div class="col-sm-10">
+                        <input type="text" style="width: 1500px;" class="form-control" id="firstname" placeholder="First Name">
+                    </div>
+                </div>
+            
+                <div class="form-group row">
+                    <label for="last-name" class="col-sm-1 col-form-label">Last Name</label>
+                    <div class="col-sm-10">
+                        <input type="text" style="width: 1500px;"class="form-control" id="lastname" placeholder="Last Name">
+                    </div>
+                </div>
+            
+                <div class="form-group row">
+                    <label for="TV-show" class="col-sm-1 col-form-label">TV Show</label>
+                    <div class="col-sm-10">
+                        <input type="text" style="width: 1500px;" class="form-control" id="tvshow" placeholder="TV Show">
+                    </div>
+                </div>
             
                 <div class="form-group row">
                     <label for="rating" class="col-sm-1 col-form-label">Rating</label>
@@ -280,55 +364,49 @@
                         </select>
                     </div>
                 </div>
-            
                 <div class="form-group row">
                     <label for="review" class="col-sm-1 col-form-label">Review</label>
                     <div class="col-sm-10">
                         <textarea class="form-control" style="width: 1500px;" id="review" rows="5" placeholder="Write your review here..."></textarea>
                     </div>
                 </div>
-
                 <div class="mb-2">
-                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">Add Review</button>
+                  <button type="submit" class="btn btn-primary" data-bs-target="#exampleModal">Add Review</button>
                 </div>
             </form>
-        </section>
-        <!-- Modal -->
-    <section>
-        <div class="modal" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog" role="document">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLabel">Thanks for submitiing your review!</h5>
-                    </div>
-                    <div class="modal-body">
-                        Are you sure you want to submit this review? 
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Go Back</button>
-                        <button type="button" class="btn btn-primary" id="save-changes" data-bs-dismiss="modal">Save changes</button>
+          </section>
+          <section>
+            <div class="modal" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Thanks for submitiing your review!</h5>
+                        </div>
+                        <div class="modal-body">
+                            Are you sure you want to submit this review? 
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Go Back</button>
+                            <button type="button" class="btn btn-primary" id="save-changes" data-bs-dismiss="modal">Save changes</button>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
-
-          </section>
+        </section>
         <section id="about-us"></section>
         <h2>About us</h2>
     </main>
     <footer class="footer">
         <ul class="footer-list">
-            <li><a href="./aboutjosh.html"> About Joshua</a>
+            <li><a href=""> About Joshua</a>
             </li>
-            <li><a href="./aboutjonathan.html"> About Jonathan</a>
+            <li><a href=""> About Jonathan</a>
             </li>
-            <li><a href="./aboutoscar.html"> About Oscar</a>
+            <li><a href=""> About Oscar</a>
             </li>
         </ul>
         <p>&copy; 2024 TV Czar. All rights reserved.</p>
     </footer>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="./assets/logic.js"></script>
 </body>
