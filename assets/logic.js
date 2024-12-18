@@ -13,17 +13,19 @@ document.addEventListener('DOMContentLoaded', function() {
                     const rating = document.getElementById('rating').value;
                     const review = document.getElementById('review').value;
 
-                    localStorage.setItem('firstName', firstName);
-                    localStorage.setItem('lastName', lastName);
-                    localStorage.setItem('tvShow', tvShow);
-                    localStorage.setItem('rating', rating);
-                    localStorage.setItem('review', review);
+                    const entry = {
+                        firstName: firstName,
+                        lastName: lastName,
+                        tvShow: tvShow,
+                        rating: rating,
+                        review: review
+                    };
 
-                    console.log('First Name:', firstName);
-                    console.log('Last Name:', lastName);
-                    console.log('TV Show:', tvShow);
-                    console.log('Rating:', rating);
-                    console.log('Review:', review);
+                    let entries = JSON.parse(localStorage.getItem('entries')) || [];
+                    entries.push(entry);
+                    localStorage.setItem('entries', JSON.stringify(entries));
+
+                    console.log('Entry saved:', entry);
                 });
             } else {
                 console.error('Save changes button not found');
