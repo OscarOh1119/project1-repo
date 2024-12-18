@@ -1,5 +1,4 @@
 //Form logic
-
 // Step 1: Identify the fields I want to extract data from
 const elements = document.getElementById("form");
 console.log(elements);
@@ -85,7 +84,7 @@ function populateTable() {
 // Call populateTable on page load to display any existing entries
 window.onload = populateTable;
 
-// Step 5: Add the new entry to the array and store it on local storage
+// Add the new entry to the array and store it on local storage
 function storeShow(newShow) {
     const existingShows = readLocalStorage(); // Retrieve existing shows from local storage
 
@@ -138,8 +137,6 @@ const crashLandingButton = document.getElementById(`crash-landing-on-you-button`
 const severanceButton = document.getElementById(`severance-button`);
 const lionessButton = document.getElementById(`lioness-button`);
 const entourageButton = document.getElementById(`entourage-button`);
-
-
 
 function getRandomIndex(value) {
     return Math.floor(Math.random()*value);
@@ -213,19 +210,3 @@ lionessButton.addEventListener("click", function(){
 entourageButton.addEventListener("click", function(){
     document.location.href = `https://www.imdb.com/title/tt0387199/?ref_=nv_sr_srsg_0_tt_8_nm_0_in_0_q_ent`;
 })
-
-// Step 5: Add the new entry to the array and store it on local storage
-
-
-// Step 6: Allow the user to view their entries
-
-
-
-
-
-
-// Step 7: Display the entries to the user
-
-// Step 8: Allow the user to remove/edit old entries
-
-// Step 9: Show a modal to the user confirming remova
