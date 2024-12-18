@@ -32,6 +32,7 @@ elements.addEventListener("submit", function(submit) {
 
         console.log(newShow);
         storeShow(newShow); // Call the storeShow function to save the new entry
+        populateTable(); // Call populateTable to refresh the table with the new entry
         
         const modal = new bootstrap.Modal(document.getElementById('exampleModal'));
         modal.show();
@@ -58,13 +59,40 @@ function storeShow(newShow) {
     localStorage.setItem('show', JSON.stringify(existingShows)); // Store the updated array back in local storage
 }
 
-// Step 6: Allow the user to view their entries
+// Function to populate the table with existing shows
+function populateTable() {
+    const tables = document.getElementsByClassName("table table-striped"); // Get elements by class name
+    const table = tables[0]; // Access the first table in the collection
 
-// Step 7: Display the entries to the user
+    const tbody = table.querySelector('tbody'); // Get the tbody element
+   
 
-// Step 8: Allow the user to remove/edit old entries
+    tbody.innerHTML = ""; // Clear existing rows in the tbody
 
-// Step 9: Show a modal to the user confirming remova
+    const existingShows = readLocalStorage(); // Get the existing shows array
+
+    existingShows.forEach((show, index) => {
+        const row = tbody.insertRow(); // Create a new row for each show
+        row.insertCell().textContent = index + 1; // Row number
+        row.insertCell().textContent = show.firstName; // First Name
+        row.insertCell().textContent = show.lastName; // Last Name
+        row.insertCell().textContent = show.tvShow; // TV Show
+        row.insertCell().textContent = show.rating; // Rating
+        row.insertCell().textContent = show.review; // Review
+    });
+}
+
+// Call populateTable on page load to display any existing entries
+window.onload = populateTable;
+
+// Step 5: Add the new entry to the array and store it on local storage
+function storeShow(newShow) {
+    const existingShows = readLocalStorage(); // Retrieve existing shows from local storage
+
+    existingShows.push(newShow); // Add the new show to the existing array
+
+    localStorage.setItem('show', JSON.stringify(existingShows)); // Store the updated array back in local storage
+}
 
 //Carousel logic
 document.addEventListener('DOMContentLoaded', function() {                  //DOMContentLoaded event will fire when page is refreshed
@@ -185,3 +213,19 @@ lionessButton.addEventListener("click", function(){
 entourageButton.addEventListener("click", function(){
     document.location.href = `https://www.imdb.com/title/tt0387199/?ref_=nv_sr_srsg_0_tt_8_nm_0_in_0_q_ent`;
 })
+
+// Step 5: Add the new entry to the array and store it on local storage
+
+
+// Step 6: Allow the user to view their entries
+
+
+
+
+
+
+// Step 7: Display the entries to the user
+
+// Step 8: Allow the user to remove/edit old entries
+
+// Step 9: Show a modal to the user confirming remova
