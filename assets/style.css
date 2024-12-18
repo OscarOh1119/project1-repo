@@ -146,3 +146,98 @@ main {
 #review {
     resize: none;
 }
+
+@media screen and (max-width: 1639px) {
+    .container-inner {
+        display:absolute;
+        margin:40px;
+        float:center;
+        width:95%;
+        border: 1px solid black;  
+    }
+
+    #imdb-container {
+    
+        height:400px;
+        display:absolute;
+        margin:40px;
+        float:left;
+        width:95%;
+        border: 1px solid black;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .container-inner {
+        display:absolute;
+        margin:40px;
+        float:center;
+        height:300px;
+        width:90%;
+        border: 1px solid black;  
+    }
+
+    #imdb-container {
+    
+        height:300px;
+        display:absolute;
+        margin:40px;
+        float:left;
+        width: 90%;
+        border: 1px solid black;
+    }
+
+    .button-format {
+        position: relative;
+        
+    }
+
+    .c-item{
+        height:300px;
+        width:100%;
+    }
+    
+    .c-img{
+        height:100%;
+        object-fit:cover;
+    
+    }
+}
+
+@media screen and (max-width: 740px) {
+    .container-inner {
+        display:absolute;
+        margin:40px;
+        float:center;
+        width:90%;
+        height:200px;
+        border: 1px solid black;  
+    }
+
+    #imdb-container {
+    
+        height:200px;
+        display:absolute;
+        margin:40px;
+        float:left;
+        width: 90%;
+        border: 1px solid black;
+    }
+
+    .button-format {
+        display:block 
+        
+    }
+
+    .c-img{
+        height:100%;
+        object-fit:cover;
+    
+    }
+    .c-item{
+        height:200px;
+        width:100%;
+    }
+}
+
+
