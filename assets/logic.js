@@ -175,6 +175,7 @@ function storeShow(newShow) {
     localStorage.setItem('show', JSON.stringify(existingShows)); // Store the updated array back in local storage
 }
 
+
 // Step 6: Allow the user to view their entries
 
 // Step 7: Display the entries to the user
