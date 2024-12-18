@@ -1,3 +1,5 @@
+//Form logic
+
 // Step 1: Identify the fields I want to extract data from
 const elements = document.getElementById("form");
 console.log(elements);
@@ -7,7 +9,7 @@ elements.addEventListener("submit", function(submit) {
     submit.preventDefault(); // Preventing default form behavior
     console.log("form submitted");
 
-    // Step 3: loop through all the fields for form validation 
+// Step 3: loop through all the fields for form validation 
     const inputFields = elements.querySelectorAll('input, textarea, select'); // Corrected 'selelct' to 'select'
     let allFieldsFilled = true; // Flag to check if all fields are filled
 
@@ -47,6 +49,24 @@ function readLocalStorage() {
     return showItem;
 }
 
+// Step 5: Add the new entry to the array and store it on local storage
+function storeShow(newShow) {
+    const existingShows = readLocalStorage(); // Retrieve existing shows from local storage
+
+    existingShows.push(newShow); // Add the new show to the existing array
+
+    localStorage.setItem('show', JSON.stringify(existingShows)); // Store the updated array back in local storage
+}
+
+// Step 6: Allow the user to view their entries
+
+// Step 7: Display the entries to the user
+
+// Step 8: Allow the user to remove/edit old entries
+
+// Step 9: Show a modal to the user confirming remova
+
+//Carousel logic
 document.addEventListener('DOMContentLoaded', function() {                  //DOMContentLoaded event will fire when page is refreshed
     function saveCarouselPosition(carouselId) {
     const carousel= document.querySelector(`#${carouselId}`);                   //use template literal to call different carousel IDs
@@ -165,20 +185,3 @@ lionessButton.addEventListener("click", function(){
 entourageButton.addEventListener("click", function(){
     document.location.href = `https://www.imdb.com/title/tt0387199/?ref_=nv_sr_srsg_0_tt_8_nm_0_in_0_q_ent`;
 })
-
-// Step 5: Add the new entry to the array and store it on local storage
-function storeShow(newShow) {
-    const existingShows = readLocalStorage(); // Retrieve existing shows from local storage
-
-    existingShows.push(newShow); // Add the new show to the existing array
-
-    localStorage.setItem('show', JSON.stringify(existingShows)); // Store the updated array back in local storage
-}
-
-// Step 6: Allow the user to view their entries
-
-// Step 7: Display the entries to the user
-
-// Step 8: Allow the user to remove/edit old entries
-
-// Step 9: Show a modal to the user confirming remova
