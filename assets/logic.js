@@ -60,6 +60,6 @@ function storeShow(newShow) {
 
 // Step 7: Display the entries to the user
 
-// Step 8: Allow the user to remove old entries
+// Step 8: Allow the user to remove/edit old entries
 
 // Step 9: Show a modal to the user confirming removal
