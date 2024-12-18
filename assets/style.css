@@ -119,15 +119,13 @@ main {
     font-size:30px;
 }
 
-
-
-
 /* Form styling  */
 
 /* Styling for form labels */
 .col-form-label {
     padding-top: 10px;
     padding-bottom: 10px;
+    padding-left: 45px;
 }
 
 /* Styling for button */
