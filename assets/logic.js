@@ -46,7 +46,6 @@ function readLocalStorage() {
 
     return showItem;
 }
-<<<<<<< HEAD
 // Example usage
 const userName = 'User';
 console.log(greetUser(userName));
@@ -175,7 +174,6 @@ entourageButton.addEventListener("click", function(){
 
 
 
-=======
 
 // Step 5: Add the new entry to the array and store it on local storage
 function storeShow(newShow) {
@@ -193,4 +191,3 @@ function storeShow(newShow) {
 // Step 8: Allow the user to remove/edit old entries
 
 // Step 9: Show a modal to the user confirming removal
->>>>>>> 41436f48ced9cec82c7333f91e2a1821e56240e1
