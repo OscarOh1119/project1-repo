@@ -1,14 +1,3 @@
-// Starter code for (project1-repo)
-// Function to greet the user
-function greetUser(name) {
-    return `Hello, ${name}! Welcome to project1-repo.`;
-}
-// Example usage
-const userName = 'User';
-console.log(greetUser(userName));
-
-// Form logic
-
 // Step 1: Identify the fields I want to extract data from
 const elements = document.getElementById("form");
 console.log(elements);
@@ -41,7 +30,9 @@ elements.addEventListener("submit", function(submit) {
 
         console.log(newShow);
         storeShow(newShow); // Call the storeShow function to save the new entry
-        prompt("Form submitted successfully");
+        
+        const modal = new bootstrap.Modal(document.getElementById('exampleModal'));
+        modal.show();
     }
 });
 
@@ -56,7 +47,7 @@ function readLocalStorage() {
     return showItem;
 }
 
-// Step 6: Add the new entry to the array and store it on local storage
+// Step 5: Add the new entry to the array and store it on local storage
 function storeShow(newShow) {
     const existingShows = readLocalStorage(); // Retrieve existing shows from local storage
 
@@ -65,66 +56,10 @@ function storeShow(newShow) {
     localStorage.setItem('show', JSON.stringify(existingShows)); // Store the updated array back in local storage
 }
 
-// Step 8: Allow the user to view their entries
+// Step 6: Allow the user to view their entries
 
-// Step 9: Display the entries to the user
+// Step 7: Display the entries to the user
 
-// Step 10: Allow the user to remove old entries
+// Step 8: Allow the user to remove/edit old entries
 
-// Step 11: Show a modal to the user confirming removal
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-document.addEventListener('DOMContentLoaded', function() {
-    const exampleModal = document.getElementById('exampleModal');
-    
-    if (exampleModal) {
-        exampleModal.addEventListener('shown.bs.modal', function() {
-            const saveChangesButton = document.getElementById('save-changes');
-            if (saveChangesButton) {
-                saveChangesButton.addEventListener('click', function() {
-                    const firstName = document.getElementById('first-name').value;
-                    const lastName = document.getElementById('last-name').value;
-                    const tvShow = document.getElementById('TV-show').value;
-                    const rating = document.getElementById('rating').value;
-                    const review = document.getElementById('review').value;
-
-                    console.log('First Name:', firstName);
-                    console.log('Last Name:', lastName);
-                    console.log('TV Show:', tvShow);
-                    console.log('Rating:', rating);
-                    console.log('Review:', review);
-                });
-            } else {
-                console.error('Save changes button not found');
-            }
-        });
-    } else {
-        console.error('Example modal not found');
-    }
-});
+// Step 9: Show a modal to the user confirming removal
