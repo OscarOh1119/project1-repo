@@ -121,9 +121,11 @@ lionessButton.addEventListener("click", function(){
     document.location.href = `https://www.imdb.com/title/tt13111078/?ref_=nv_sr_srsg_0_tt_7_nm_1_in_0_q_lioness`;
 })
 
+
 entourageButton.addEventListener("click", function(){
     document.location.href = `https://www.imdb.com/title/tt0387199/?ref_=nv_sr_srsg_0_tt_8_nm_0_in_0_q_ent`;
 })
+
 
 
 
