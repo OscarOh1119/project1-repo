@@ -47,10 +47,6 @@ function readLocalStorage() {
     return showItem;
 }
 
-// Example usage
-const userName = 'User';
-console.log(greetUser(userName));
-
 document.addEventListener('DOMContentLoaded', function() {                  //DOMContentLoaded event will fire when page is refreshed
     function saveCarouselPosition(carouselId) {
     const carousel= document.querySelector(`#${carouselId}`);                   //use template literal to call different carousel IDs
@@ -185,4 +181,4 @@ function storeShow(newShow) {
 
 // Step 8: Allow the user to remove/edit old entries
 
-// Step 9: Show a modal to the user confirming removal
+// Step 9: Show a modal to the user confirming remova
