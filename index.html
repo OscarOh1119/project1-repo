@@ -9,20 +9,20 @@
 </head>
 <body>
     <header>
-        <h1>Welcome to Project 1 </h1>
-        <nav class="navbar navbar-expand-lg navbar-dark fixed-top mask-custom shadow-0">
-            <div class="container-fluid">
-              <a class="navbar-brand" href="#">TV Czar</a>
+        <!-- <h1 style="background-color: #e3f2fd;"></h1> -->
+        <nav class="navbar navbar-expand-lg navbar-dark mask-custom shadow-0">
+            <div class="container-fluid navbar navbar-light " style="background-color: #e3f2fd;">
+              <a class="navbar-brand light-pic-font" href="#">TV Czar</a>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
               <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
                   <li class="nav-item">
-                    <a class="nav-link" href="#">Staff Reviews</a>
+                    <a class="nav-link" href="#staff-review">Staff Reviews</a>
                   </li>
                   <li class="nav-item">
-                        <a class="nav-link" href="#">Add a TV Show</a>
+                        <a class="nav-link" href="#form">Add a TV Show</a>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -41,7 +41,7 @@
     </header>
     <main>
         
-        <section id="staff-review" class="container-outer">
+        <section id="staff-review" class="container-outer mt-5 light-pic-font staff-style">
           <h2>Staff Reviews</h2>
           <div id="josh-container" class="carousel slide container-inner">
             <div class="carousel-indicators">
@@ -266,8 +266,8 @@
             </div>
           </div>
         </section>
-        <section id="add-movie">
-            <h2>Add a movie</h2>
+        <section id="add-TV-show">
+            <h2 class="light-pic-font">Add a TV Show</h2>
             <form id="form">
                 <div class="form-group row">
                     <label for="first-name" class="col-sm-1 col-form-label">First Name</label>
@@ -347,20 +347,22 @@
                     </div>
                 </div>
             </div>
+            <div class="mb-2">
+            <button id="clear-storage" type="submit" class="btn btn-primary">Delete All Reviews</button>
+            </div>
         </section>
         <section id="about-us"></section>
-        <h2>About us</h2>
     </main>
-    <footer class="footer">
-        <ul class="footer-list">
-            <li><a href="./aboutjosh.html"> About Joshua</a>
+    <footer class="footer nav-style">
+        <ul class="footer-list footer-flex-container">
+            <li class="light-pic-font"><a href="./aboutjosh.html"> About Joshua</a>
             </li>
-            <li><a href="./aboutjonathan.html"> About Jonathan</a>
+            <li class="light-pic-font"><a href="./aboutjonathan.html"> About Jonathan</a>
             </li>
-            <li><a href="./aboutoscar.html"> About Oscar</a>
+            <li class="light-pic-font"><a href="./aboutoscar.html"> About Oscar</a>
             </li>
         </ul>
-        <p>&copy; 2024 TV Czar. All rights reserved.</p>
+        <p class="light-pic-font">&copy; 2024 TV Czar. All rights reserved.</p>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="./assets/logic.js"></script>
