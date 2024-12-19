@@ -1,12 +1,12 @@
 //Form logic
 // Step 1: Identify the fields I want to extract data from
 const elements = document.getElementById("form");
-console.log(elements);
+// console.log(elements);
 
 // Step 2: Add an event listener and Create an object to store shows 
 elements.addEventListener("submit", function(submit) {
     submit.preventDefault(); // Preventing default form behavior
-    console.log("form submitted");
+    // console.log("form submitted");
 
 // Step 3: loop through all the fields for form validation 
     const inputFields = elements.querySelectorAll('input, textarea, select'); // Corrected 'selelct' to 'select'
@@ -29,7 +29,7 @@ elements.addEventListener("submit", function(submit) {
             review: document.getElementById("review").value,
         };
 
-        console.log(newShow);
+        // console.log(newShow);
         storeShow(newShow); // Call the storeShow function to save the new entry
         populateTable(); // Call populateTable to refresh the table with the new entry
         
@@ -108,13 +108,13 @@ function populateTable() {
     });
 }
 
-//Carousel logic
+//Carousel logic to save carousel position based on the index
 document.addEventListener('DOMContentLoaded', function() {                  //DOMContentLoaded event will fire when page is refreshed
     function saveCarouselPosition(carouselId) {
     const carousel= document.querySelector(`#${carouselId}`);                   //use template literal to call different carousel IDs
 
-    carousel.addEventListener(`slid.bs.carousel`, function(event) {            //slid.bs.carousel is fired when the carousel has completed its slide transition according to Bootstrap
-        const activeIndex= event.to;                                              //slide.bs.carousel fires when the slide instance method is invoked
+    carousel.addEventListener(`slid.bs.carousel`, function(event) {            //slid.bs.carousel is fired when the carousel has completed its slide transition according to Bootstrap documentation
+        const activeIndex= event.to;                                              //slide.bs.carousel fires when the slide instance method is invoked  event.to is a slide.bs.carousel property it denotes the index of the slide that is being transitioned
         localStorage.setItem(`${carouselId}-activeIndex`,activeIndex);              //sets carouselID-active index as key for active index value
     })
 
@@ -126,16 +126,21 @@ document.addEventListener('DOMContentLoaded', function() {                  //DO
     }
  }
 
+ //calling all the functions once page is refreshed
 saveCarouselPosition(`josh-container`);
 saveCarouselPosition(`jonathan-container`);
 saveCarouselPosition(`oscar-container`);                
 })
 
+
+//hard coding imdb shows and images for the TV shows to show up in the IMDB container 
 const imdbShows = [`https://beam-images.warnermediacdn.com/BEAM_LWM_DELIVERABLES/396999a6-3fff-4af3-802b-10c46d10deff/b2551336ecc42f4e68fe8f10c4a441a3ec388e28.jpg?host=wbd-images.prod-vod.h264.io&partner=beamcom`,`https://9to5toys.com/wp-content/uploads/sites/5/2017/06/planet-earth-ii.jpg?w=1000`, `https://beam-images.warnermediacdn.com/BEAM_LWM_DELIVERABLES/43bcd380-b62e-4c46-a140-e2682c10a3ce/c7295d3b-d50a-11ee-a7fe-0288acd57a89?host=wbd-images.prod-vod.h264.io&partner=beamcom`, `https://m.media-amazon.com/images/M/MV5BMzFhMDQ5MTItMjllMy00YmM2LTk3NmYtY2I3MTIxMzAyNDFlXkEyXkFqcGdeQW1pYnJ5YW50._V1_.jpg`,`https://theilluminerdi.com/wp-content/uploads/2021/02/Avatar-the-last-airbender-header.jpg`, `https://watchdocumentaries.com/wp-content/uploads/blue-planet-ii.jpg`, `https://planetary.s3.amazonaws.com/web/assets/pictures/20140506_Cosmos_layers-off.jpg`,`https://www.bbcchildreninneed.co.uk/wp-content/uploads/2024/11/Bluey-Fundraising-Site-Main-Artwork-960x540.png`,`https://uktv-res.cloudinary.com/image/upload/v1717494123/qselrew7yne5ldggjyyq.jpg`,`https://img2.hulu.com/user/v3/artwork/213ddd1e-0c45-4f84-bb25-ea90ffd6507c?base_image_bucket_name=image_manager&base_image=0146206f-bb2a-4335-8855-bd89ed627079&size=1200x630&format=webp`,`https://images.thedirect.com/media/article_full/rick-morty-season-release.jpg`,`https://m.media-amazon.com/images/S/pv-target-images/d37b95f4c1e97dd0451113295d267681a70d0f16293421f0c89ef715f77081aa.jpg`,`https://cdn.kqed.org/wp-content/uploads/sites/12/2019/01/twilight_zone_banner_0-800x453.jpg`, `https://static1.moviewebimages.com/wordpress/wp-content/uploads/2022/11/Benedict-Cumberbatch-star-of-Sherlock-the-BBC-TV-adaptation-of-Sherlock-Holmes.jpg`,`https://www.awn.com/sites/default/files/styles/original/public/image/featured/attack_on_titan_oad_-_episode_3_-_1280x720.jpg?itok=OXYAGhrm`]
 
 const imdbLinks= [`https://www.imdb.com/title/tt7366338/?ref_=chttvtp_t_5`,`https://www.imdb.com/title/tt5491994/?ref_=chttvtp_t_2`, `https://www.imdb.com/title/tt0795176/?ref_=chttvtp_t_3`, `https://www.imdb.com/title/tt0185906/?ref_=chttvtp_t_4`, `https://www.imdb.com/title/tt0417299/?ref_=chttvtp_t_7`, `https://www.imdb.com/title/tt6769208/?ref_=chttvtp_t_8`,`https://www.imdb.com/title/tt2395695/?ref_=chttvtp_t_10`, `https://www.imdb.com/title/tt7678620/?ref_=chttvtp_t_14`,`https://www.imdb.com/title/tt0071075/?ref_=chttvtp_t_15`,`https://www.imdb.com/title/tt1355642/?ref_=chttvtp_t_16`,`https://www.imdb.com/title/tt2861424/?ref_=chttvtp_t_17`,`https://www.imdb.com/title/tt8420184/?ref_=chttvtp_t_19`, `https://www.imdb.com/title/tt0052520/?ref_=chttvtp_t_20`,`https://www.imdb.com/title/tt1475582/?ref_=chttvtp_t_22`,`https://www.imdb.com/title/tt2560140/?ref_=chttvtp_t_23`]
 
-const imdbImage = document.getElementById(`imdb-image`);
+
+//assigning all buttons in each carousel slide and assigning the imdb image to store the ones in the array
+const imdbImage = document.getElementById(`imdb-image`);                    
 const imdbButton = document.getElementById('imdb-button');
 const theWireButton = document.getElementById('the-wire-button');
 const snowfallButton = document.getElementById(`snowfall-button`);
@@ -153,14 +158,21 @@ const severanceButton = document.getElementById(`severance-button`);
 const lionessButton = document.getElementById(`lioness-button`);
 const entourageButton = document.getElementById(`entourage-button`);
 
+
+//Used to get a random image and its corresponding imdb page 
 function getRandomIndex(value) {
-    return Math.floor(Math.random()*value);
+    return Math.floor(Math.random()*value);   //rounds down 
 }
+
+//The array only has 15 values and since the math.random spits out a number between 0 and 1. Inputting 15 would only allow index 0-14
 let rndIndex=getRandomIndex(15);
+
+//uses the random index generated from getRandomIndex and assigns the corresponding array item to the image that is loaded
 document.addEventListener(`DOMContentLoaded`, function(){
     imdbImage.setAttribute(`src`,imdbShows[rndIndex]);
 })
 
+//uses the random index generated from getRandomIndex and assigns it to the button on the IMDB container
 imdbButton.addEventListener("click", function(){
     document.location.href = imdbLinks[rndIndex];
 })
