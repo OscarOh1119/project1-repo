@@ -48,10 +48,10 @@ function readLocalStorage() {
 
     return showItem;
 }
-// Call populateTable on page load to display any existing entries
+// Step 5: Call populateTable on page load to display any existing entries
 window.onload = populateTable;
 
-// Add the new entry to the array and store it on local storage
+//Step 6: Add the new entry to the array and store it on local storage
 function storeShow(newShow) {
     const existingShows = readLocalStorage(); // Retrieve existing shows from local storage
 
@@ -62,7 +62,7 @@ function storeShow(newShow) {
 
 //Function to remove existing review entry
 
-// Function to clear all entries from local storage
+//step 7: Function to clear all entries from local storage
 function clearLocalStorage() {
     localStorage.removeItem('show');
     populateTable(); // Refresh the table after clearing storage
@@ -79,7 +79,7 @@ function removeEntry(index) {
     populateTable(); // Refresh the table
 }
 
-// Function to populate the table with existing shows
+// Function to populate the table with existing shows and also delete a row
 function populateTable() {
     const tables = document.getElementsByClassName("table table-striped"); // Get elements by class name
     const table = tables[0]; // Access the first table in the collection
@@ -99,17 +99,14 @@ function populateTable() {
         row.insertCell().textContent = show.review; // Review
 
         // Add a delete button to each row
-        const deleteCell = row.insertCell();
-        const deleteButton = document.createElement('button');
-        deleteButton.textContent = 'Delete';
-        deleteButton.className = 'btn btn-danger';
-        deleteButton.addEventListener('click', () => removeEntry(index));
-        deleteCell.appendChild(deleteButton);
+        const deleteCell = row.insertCell(); // add a new cell to therow
+        const deleteButton = document.createElement('button');//creating a delete buttin
+        deleteButton.textContent = 'Delete';//text to show in the button
+        deleteButton.className = 'btn btn-danger'; //makes the button red
+        deleteButton.addEventListener('click', () => removeEntry(index)); //event listener to trigger on click and remove the entry
+        deleteCell.appendChild(deleteButton);//appending the delete button to the delete cell
     });
 }
-
-// Call populateTable on page load to display any existing entries
-window.onload = populateTable;
 
 //Carousel logic
 document.addEventListener('DOMContentLoaded', function() {                  //DOMContentLoaded event will fire when page is refreshed
