@@ -48,8 +48,10 @@ function readLocalStorage() {
 
     return showItem;
 }
+// Call populateTable on page load to display any existing entries
+window.onload = populateTable;
 
-// Step 5: Add the new entry to the array and store it on local storage
+// Add the new entry to the array and store it on local storage
 function storeShow(newShow) {
     const existingShows = readLocalStorage(); // Retrieve existing shows from local storage
 
@@ -58,14 +60,31 @@ function storeShow(newShow) {
     localStorage.setItem('show', JSON.stringify(existingShows)); // Store the updated array back in local storage
 }
 
+//Function to remove existing review entry
+
+// Function to clear all entries from local storage
+function clearLocalStorage() {
+    localStorage.removeItem('show');
+    populateTable(); // Refresh the table after clearing storage
+}
+
+// Add event listener to the clear storage button
+document.getElementById('clear-storage').addEventListener('click', clearLocalStorage);
+
+// Function to remove a specific entry from local storage
+function removeEntry(index) {
+    const existingShows = readLocalStorage();
+    existingShows.splice(index, 1); // Remove the entry at the specified index
+    localStorage.setItem('show', JSON.stringify(existingShows)); // Update local storage
+    populateTable(); // Refresh the table
+}
+
 // Function to populate the table with existing shows
 function populateTable() {
     const tables = document.getElementsByClassName("table table-striped"); // Get elements by class name
     const table = tables[0]; // Access the first table in the collection
 
     const tbody = table.querySelector('tbody'); // Get the tbody element
-   
-
     tbody.innerHTML = ""; // Clear existing rows in the tbody
 
     const existingShows = readLocalStorage(); // Get the existing shows array
@@ -78,20 +97,19 @@ function populateTable() {
         row.insertCell().textContent = show.tvShow; // TV Show
         row.insertCell().textContent = show.rating; // Rating
         row.insertCell().textContent = show.review; // Review
+
+        // Add a delete button to each row
+        const deleteCell = row.insertCell();
+        const deleteButton = document.createElement('button');
+        deleteButton.textContent = 'Delete';
+        deleteButton.className = 'btn btn-danger';
+        deleteButton.addEventListener('click', () => removeEntry(index));
+        deleteCell.appendChild(deleteButton);
     });
 }
 
 // Call populateTable on page load to display any existing entries
 window.onload = populateTable;
-
-// Add the new entry to the array and store it on local storage
-function storeShow(newShow) {
-    const existingShows = readLocalStorage(); // Retrieve existing shows from local storage
-
-    existingShows.push(newShow); // Add the new show to the existing array
-
-    localStorage.setItem('show', JSON.stringify(existingShows)); // Store the updated array back in local storage
-}
 
 //Carousel logic
 document.addEventListener('DOMContentLoaded', function() {                  //DOMContentLoaded event will fire when page is refreshed

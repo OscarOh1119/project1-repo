@@ -14,16 +14,13 @@ body {
 
 /* Header */
 header {
-    background: #333;
-    color: #fff;
-    padding: 10px 0;
+    background:#e3f2fd;;
+    /* color: #fff; */
+    /* padding: 10px 0; */
     text-align: center;
 }
 
-/* Navigation */
-nav {
-    margin: 20px 0;
-}
+
 
 nav ul {
     list-style: none;
@@ -125,7 +122,7 @@ main {
 .col-form-label {
     padding-top: 10px;
     padding-bottom: 10px;
-    padding-left: 45px;
+    padding-left: 30px;
 }
 
 /* Styling for button */
@@ -145,6 +142,29 @@ main {
 /* Styling for review section */
 #review {
     resize: none;
+}
+
+.nav-style {
+    background-color: #f4f4f4;
+}
+
+.staff-style {
+    background-color: #fff;
+}
+
+.footer-flex-container {
+    display:flex;
+    flex-direction:row;
+    justify-content: space-evenly;
+}
+
+.links-style {
+    color:#333;
+}
+
+.about-us-header {
+    
+    text-align: center;
 }
 
 @media screen and (max-width: 1639px) {
@@ -239,5 +259,7 @@ main {
         width:100%;
     }
 }
+
+
 
 
